@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+.side_nav{
+  height: 100vh;
+  width: 60vw;
+  background-image: linear-gradient(to bottom, rgba(125, 222, 220, 0.5), rgba(64, 156, 151, 0.5)), url("../resources/Background.jpg");
+  clip-path: polygon(0 0, 40vw 0, 60vw 100vh, 0% 100vh);
+  transition: all 0.5s;
+  color: white;
+  position: relative;
+}
+.side_nav:hover{
+  clip-path: polygon(0 0, 50vw 0, 60vw 100vh, 0% 100vh);
+}
+.side_nav_heading h1{
+  padding: 5px;
+  letter-spacing: 11.2px;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+.side_nav_heading p{
+  padding: 5px;
+  letter-spacing: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.side_nav_heading{
+  position: absolute;
+  left: 50%;;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
