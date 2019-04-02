@@ -13,6 +13,7 @@ body{
   transition: all 0.5s;
   color: white;
   position: relative;
+  float: left;
 }
 .side_nav:hover{
   clip-path: polygon(0 0, 50vw 0, 60vw 100vh, 0% 100vh);
@@ -34,4 +35,92 @@ body{
   left: 50%;;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.right_nav{
+  float: right;
+  width: 38vw;
+  height: 100vh;
+  position: relative;
+}
+.right_nav_menu{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.slide_menu{
+  height: 80px;
+
+  /*font-weight: lighter;
+  width: 98%;
+  height: 75px;
+  background-color: rgb(125, 222, 220);
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);*/
+}
+.slide_menu_layer01{
+  height: 100%;
+  width: 100%;
+  float: right;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+  background-color: rgb(64, 156, 151);
+}
+.slide_menu_layer02{
+  height: 100%;
+  width: 100%;
+  float: right;
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 10% 100%);
+  background-image: linear-gradient(to right, rgb(125, 222, 220), rgb(64, 156, 151));
+  position: relative;
+  transition: all .5s ease-out;
+
+}
+
+.slide_menu_layer02:hover{
+  width: 95%;
+}
+.slide_menu_layer02 p{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.anim01{
+  animation: slideAnimation .7s ease-out;
+}
+.anim02{
+  animation: slideAnimation .7s ease-out .2s;
+  animation-fill-mode: backwards;
+}
+.anim03{
+  animation: slideAnimation .7s ease-out .4s;
+  animation-fill-mode: backwards;
+}
+.slide_menu p{
+  /*position: absolute;
+  padding: 25px 70% 25px 0;
+  float: right;
+  text-decoration: none;
+  color: rgb(64, 156, 151);
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);*/
+
+}
+.about_me_layer2{
+  /*float: left;
+  height: 100%;
+  width: 20%;
+  clip-path: polygon(0 0, 5% 0, 10% 100%, 5% 100%);
+  background-color: rgb(64, 156, 151);*/
+}
+
+@keyframes slideAnimation{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
 }
